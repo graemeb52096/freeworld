@@ -1,4 +1,9 @@
-from pyramid.view import view_config
+from pyramid.view import view_config, forbidden_view_config, notfound_view_config
+from pyramid.response import Response
+from pyramid.httpexceptions import HTTPNotFound
+
+from freeworld.resources import Root, Questions, Question
+
 
 QUESTIONS = {
     '0': {
@@ -64,7 +69,7 @@ def list_questions(context, request):
 @notfound_view_config()
 def notfound(request):
     return Response(
-        body=json.dumps({'message': 'Page not found.'}),
+        body=jspon.dumps({'message': 'Page not found.'}),
         status='404 Not Found',
         content_type='application/json; charset=UTF-8'
     )

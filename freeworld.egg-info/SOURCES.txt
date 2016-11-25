@@ -4,8 +4,11 @@ README.txt
 development.ini
 production.ini
 pytest.ini
+requirements.txt
 setup.py
 freeworld/__init__.py
+freeworld/db.py
+freeworld/resources.py
 freeworld/tests.py
 freeworld/views.py
 freeworld.egg-info/PKG-INFO
@@ -15,7 +18,3 @@ freeworld.egg-info/entry_points.txt
 freeworld.egg-info/not-zip-safe
 freeworld.egg-info/requires.txt
 freeworld.egg-info/top_level.txt
-freeworld/static/pyramid-16x16.png
-freeworld/static/pyramid.png
-freeworld/static/theme.css
-freeworld/templates/mytemplate.pt
